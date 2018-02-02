@@ -21,7 +21,7 @@ public class FollowCamera : MonoBehaviour
         transform.position = Vector3.Lerp
             (transform.position, initPos.position, smoothing * Time.deltaTime);
         transform.rotation = Quaternion.Lerp
-            (transform.rotation, FindObjectOfType<Player1>().transform.rotation, smoothing * Time.deltaTime);
+            (transform.rotation, FindObjectOfType<Player>().transform.rotation, smoothing * Time.deltaTime);
 
         transform.LookAt(Target, Vector3.up);
 
